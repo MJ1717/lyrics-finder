@@ -3,15 +3,29 @@
 <html>
 <head>
   <title>Lyrics Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/result-style.css') }}">
 </head>
-<body>
-    <!-- u need data (title artist) from flask -->
-  <h1>Lyrics for "{{ title }}" by "{{ artist }}"</h1>
+<body style="margin-left: 80px;">
+    <div class="side-bar"> 
+        <div class="button-container">
+            <a href="/" class="button-goback">
+                Back
+            </a>
+        </div>
+    </div>
 
-  <!-- pre reserve the order and formatting of lyrics data -->
-  <pre>{{ lyrics }}</pre>
+    <div class="big-container">
+        <div class="container-1">
+            <!-- u need data (title artist) from flask -->
+            <p class="header-text">{{ title }} by {{ artist }}</p>
 
-  <!-- Back button -->
-  <a href="/">Search again</a>
+            <!-- pre reserve the order and formatting of lyrics data -->
+            <pre>{{ lyrics }}</pre>
+
+        </div>
+        <div class="container-2">
+            a
+        </div>
+    </div>
 </body>
 </html>
