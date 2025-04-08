@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lyrics Result</title>
+</head>
+<body>
+    <!-- u need data (title artist) from flask -->
+  <h1>Lyrics for "{{ title }}" by "{{ artist }}"</h1>
+
+  <!-- pre reserve the order and formatting of lyrics data -->
+  <pre>{{ lyrics }}</pre>
+
+  <!-- Back button -->
+  <a href="/">Search again</a>
+</body>
+</html>

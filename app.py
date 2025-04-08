@@ -37,9 +37,12 @@ def get_lyrics():
     else:
         lyrics = "No lyrics found with given data" 
 
-    return lyrics
 
-    
+    #you r rendering result html in templates
+    #and sending some datas there with given variable name
+    return render_template("result.html", artist=artist, title=title, lyrics=lyrics)
+
+
 
 
 
