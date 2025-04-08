@@ -35,7 +35,7 @@ def get_lyrics():
     if 'lyrics' in data:
         lyrics = data['lyrics']
     else:
-        lyrics = "No lyrics found with given data" 
+        lyrics = "No lyrics found..." 
 
 
     #you r rendering result html in templates
