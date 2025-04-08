@@ -1,0 +1,24 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lyrics Finder</title>
+</head>
+
+<body>
+  <h1>Find Lyrics</h1>
+
+    <!-- form is where user can input, and action submittng information
+     go to the /lyrics in python, and post is doing this in the back -->
+  <form action="/lyrics" method="POST">
+
+    <!-- input typ eis text, and name artist is there so flask app can
+     get the information so its like a variable name,
+     required is there so user has to enter something -->
+    <input type="text" name="artist" placeholder="Artist name" required>
+    <input type="text" name="title" placeholder="Song title" required>
+    <button type="submit">Get Lyrics</button>
+  </form>
+</body>
+</html>
